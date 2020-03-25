@@ -1,0 +1,825 @@
+masterstyles:
+  - class: style.MasterPage
+    attrs:
+      name: Standard
+      pagelayoutname: cv_pagelayout
+
+automaticstyles:
+  - class: style.PageLayout
+    attrs:
+      name: cv_pagelayout
+    children:
+      - class: style.PageLayoutProperties
+        attrs:
+          pagewidth: 210mm
+          pageheight: 297mm
+          margintop: 10mm
+          marginright: 5mm
+          marginbottom: 10mm
+          marginleft: 5mm
+          printorientation: portrait
+        children:
+          - class: style.Columns
+            attrs:
+              columncount: 2
+            children:
+              - class: style.ColumnSep
+                attrs:
+                  width: 0.01cm
+                  color: "#dddddd"
+                  height: 100%
+                  style: solid
+              - class: style.Column
+                attrs:
+                  relwidth: "7995*"
+                  startindent: 0cm
+                  endindent: 0.25cm
+              - class: style.Column
+                attrs:
+                  relwidth: "3345*"
+                  startindent: 0.25cm
+                  endindent: 0cm
+  - class: text.ListStyle
+    attrs:
+      name: cv_list
+    children:
+      - class: text.ListLevelStyleBullet
+        attrs:
+          level: 1
+          stylename: cv_bullet
+          bulletchar: "-"
+        children:
+          - class: style.ListLevelProperties
+            attrs:
+              listlevelpositionandspacemode: label-alignment
+            children:
+              - class: style.ListLevelLabelAlignment
+                attrs:
+                  labelfollowedby: listtab
+                  listtabstopposition: 3mm
+                  textindent: -2mm
+                  marginleft: 3mm
+
+styles:
+
+  - class: style.Style
+    attrs:
+      name: cv_text
+      displayname: CV Text
+      family: text
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontname: "Open Sans"
+            fontfamily: "Open Sans"
+            fontstylename: Normal
+            fontsize: 8pt
+            fontnameasian: "Open Sans"
+            fontsizeasian: 8pt
+  - class: style.Style
+    attrs:
+      name: cv_bullet
+      displayname: CV Bullet
+      family: text
+      parentstylename: cv_text
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontname: "Open Sans"
+            fontfamily: "Open Sans"
+            fontstylename: Normal
+            fontsize: 8pt
+            fontnameasian: "Open Sans"
+            fontsizeasian: 8pt
+  - class: style.Style
+    attrs:
+      name: cv_icon
+      displayname: CV Icon
+      family: text
+      parentstylename: cv_text
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontname: "Open Sans"
+            fontfamily: "Open Sans"
+            fontstylename: Normal
+            fontsize: 12pt
+            fontnameasian: "Open Sans"
+            fontsizeasian: 12pt
+  - class: style.Style
+    attrs:
+      name: cv_skillname
+      displayname: CV Skill Name
+      family: text
+      parentstylename: cv_text
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontname: "Open Sans"
+            fontfamily: "Open Sans"
+            fontstylename: Normal
+            fontsize: 9pt
+            fontweight: bold
+            fontnameasian: "Open Sans"
+            fontsizeasian: 9pt
+  - class: style.Style
+    attrs:
+      name: cv_skilllabel
+      displayname: CV Skill Label
+      family: text
+      parentstylename: cv_text
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontname: "Open Sans"
+            fontfamily: "Open Sans"
+            fontstylename: Normal
+            fontsize: 8pt
+            color: "#808080"
+  - class: style.Style
+    attrs:
+      name: cv_skilllevel
+      displayname: CV Skill Level
+      family: text
+      parentstylename: cv_text
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontname: "Open Sans"
+            fontfamily: "Open Sans"
+            fontstylename: Normal
+            fontsize: 7pt
+            fontnameasian: "Open Sans"
+            fontsizeasian: 7pt
+  - class: style.Style
+    attrs:
+      name: cv_organisation
+      displayname: CV Organisation
+      family: text
+      parentstylename: cv_text
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontname: "Open Sans"
+            fontfamily: "Open Sans"
+            fontstylename: Normal
+            fontsize: 9pt
+            fontnameasian: "Open Sans"
+            fontsizeasian: 9pt
+            color: "#1e90ff"
+  - class: style.Style
+    attrs:
+      name: cv_daterange
+      displayname: CV Date Range
+      family: text
+      parentstylename: cv_text
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontname: "Open Sans"
+            fontfamily: "Open Sans"
+            fontstylename: Normal
+            fontsize: 8pt
+            fontnameasian: "Open Sans"
+            fontsizeasian: 8pt
+            color: "#808080"
+  - class: style.Style
+    attrs:
+      name: cv_country
+      displayname: CV Country
+      family: text
+      parentstylename: cv_text
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontname: "Open Sans"
+            fontfamily: "Open Sans"
+            fontstylename: Normal
+            fontsize: 8pt
+            fontnameasian: "Open Sans"
+            fontsizeasian: 8pt
+            color: "#808080"
+  - class: style.Style
+    attrs:
+      name: cv_email
+      displayname: CV Email
+      family: text
+      parentstylename: cv_text
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontname: "Open Sans"
+            fontfamily: "Open Sans"
+            fontstylename: Normal
+            fontsize: 8pt
+            fontnameasian: "Open Sans"
+            fontsizeasian: 8pt
+            color: "#1e90ff"
+
+  - class: style.Style
+    attrs:
+      name: cv_base
+      displayname: CV Base
+      family: paragraph
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontname: "Open Sans"
+            fontfamily: "Open Sans"
+            fontstylename: Normal
+            fontsize: 8pt
+            fontnameasian: "Open Sans"
+            fontsizeasian: 8pt
+  - class: style.Style
+    attrs:
+      name: cv_paragraph
+      displayname: CV Paragraph
+      family: paragraph
+      parentstylename: cv_base
+  - class: style.Style
+    attrs:
+      name: cv_title
+      displayname: CV Title
+      family: paragraph
+      parentstylename: cv_base
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontsize: 280%
+            fontsizeasian: 280%
+      - class: style.ParagraphProperties
+        attrs:
+          attributes:
+            breakbefore: column
+  - class: style.Style
+    attrs:
+      name: cv_headline
+      displayname: CV Headline
+      family: paragraph
+      parentstylename: cv_base
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontsize: 140%
+            fontsizeasian: 140%
+            color: "#1e90ff"
+  - class: style.Style
+    attrs:
+      name: cv_sectiontitle
+      displayname: CV Section Title
+      family: paragraph
+      parentstylename: cv_base
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontweight: bold
+            fontsizecomplex: 100%
+            color: "#808080"
+            texttransform: uppercase
+      - class: style.ParagraphProperties
+        attrs:
+          attributes:
+            margintop: 5mm
+            marginbottom: 1mm
+  - class: style.Style
+    attrs:
+      name: cv_sectiontitle_break
+      displayname: CV Section Title (break)
+      family: paragraph
+      parentstylename: cv_base
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontweight: bold
+            fontsizecomplex: 100%
+            color: "#808080"
+            texttransform: uppercase
+      - class: style.ParagraphProperties
+        attrs:
+          attributes:
+            margintop: 0mm
+            marginbottom: 1mm
+            breakbefore: column
+  - class: style.Style
+    attrs:
+      name: cv_heading
+      displayname: CV Heading
+      family: paragraph
+      parentstylename: cv_base
+    children:
+      - class: style.TextProperties
+        attrs:
+          attributes:
+            fontweight: 600
+            fontsize: 130%
+            fontsizeasian: 130%
+      - class: style.ParagraphProperties
+        attrs:
+          attributes:
+            margintop: 2mm
+  - class: style.Style
+    attrs:
+      name: cv_skill
+      displayname: CV Skill
+      family: paragraph
+      parentstylename: cv_base
+    children:
+      - class: style.ParagraphProperties
+        attrs:
+          attributes:
+            margintop: 2mm
+        children:
+          - class: style.TabStops
+            children:
+              - class: style.TabStop
+                attrs:
+                  position: 24mm
+                  type: left
+              - class: style.TabStop
+                attrs:
+                  position: 55mm
+                  type: right
+  - class: style.Style
+    attrs:
+      name: cv_languages
+      displayname: CV Languages
+      family: paragraph
+      parentstylename: cv_base
+    children:
+      - class: style.ParagraphProperties
+        attrs:
+          attributes:
+            margintop: 2mm
+        children:
+          - class: style.TabStops
+            children:
+              - class: style.TabStop
+                attrs:
+                  position: 18mm
+                  type: left
+              - class: style.TabStop
+                attrs:
+                  position: 55mm
+                  type: right
+
+text:
+
+  - class: text.H
+    attrs:
+      outlinelevel: 1
+      stylename: cv_title
+      text: {{ name | tojson }}
+  - class: text.H
+    attrs:
+      outlinelevel: 1
+      stylename: cv_headline
+      text: {{ headline | tojson }}
+
+{% if work %}
+  - class: text.Section
+    attrs:
+      name: Experience
+      stylename: cv_section
+    children:
+      - class: text.H
+        attrs:
+          outlinelevel: 1
+          stylename: cv_sectiontitle
+          text: {{ translations.work | tojson if translations and translations.work else 'Experience' }}
+{% for item in work %}
+      - class: text.H
+        attrs:
+          outlinelevel: 3
+          stylename: cv_heading
+          text: {{ item.position | tojson }}
+      - class: text.P
+        attrs:
+          stylename: cv_paragraph
+        children:
+          - class: text.Span
+            attrs:
+              stylename: cv_organisation
+              text: {{ item.employer.name | tojson }}
+          - class: text.S
+            attrs:
+              c: 4
+          - class: text.Span
+            attrs:
+              stylename: cv_daterange
+              text: {{ item.period.from | asdatetime("%b %Y") }} - {% if item.period.to %}{{ item.period.to | asdatetime("%b %Y") }}{% else %}today{% endif %}
+          - class: text.S
+            attrs:
+              c: 4
+          - class: text.Span
+            attrs:
+              stylename: cv_country
+              text: {{ item.employer.country | tojson }}
+{% if item.activities %}
+      - class: text.List
+        attrs:
+          stylename: cv_list
+        children:
+{% for activity in item.activities | aslist %}
+          - class: text.ListItem
+            children:
+              - class: text.P
+                attrs:
+                  stylename: cv_paragraph
+                  text: {{ activity | tojson }}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if education %}
+  - class: text.Section
+    attrs:
+      name: Education
+      stylename: cv_section
+    children:
+      - class: text.H
+        attrs:
+          outlinelevel: 1
+          stylename: cv_sectiontitle
+          text: {{ translations.education | tojson if translations and translations.education else 'Education' }}
+{% for item in education %}
+      - class: text.H
+        attrs:
+          outlinelevel: 3
+          stylename: cv_heading
+          text: {{ item.title | tojson }}
+      - class: text.P
+        attrs:
+          stylename: cv_paragraph
+        children:
+          - class: text.Span
+            attrs:
+              stylename: cv_organisation
+              text: {{ item.organisation.name | tojson }}
+          - class: text.S
+            attrs:
+              c: 4
+          - class: text.Span
+            attrs:
+              stylename: cv_daterange
+              text: {{ item.period.from | asdatetime("%Y") }} - {% if item.period.to %}{{ item.period.to | asdatetime("%Y") }}{% else %}today{% endif %}
+          - class: text.S
+            attrs:
+              c: 4
+          - class: text.Span
+            attrs:
+              stylename: cv_country
+              text: {{ item.organisation.country | tojson }}
+{% if item.activities %}
+      - class: text.List
+        attrs:
+          stylename: cv_list
+        children:
+{% for activity in item.activities | aslist %}
+          - class: text.ListItem
+            children:
+              - class: text.P
+                attrs:
+                  stylename: cv_paragraph
+                  text: {{ activity | tojson }}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if publications %}
+  - class: text.Section
+    attrs:
+      name: Publications
+      stylename: cv_section
+    children:
+      - class: text.H
+        attrs:
+          outlinelevel: 1
+          stylename: cv_sectiontitle
+          text: {{ translations.publications | tojson if translations and translations.publications else 'Publications' }}
+      - class: text.List
+        attrs:
+          stylename: cv_list
+        children:
+{% for item in publications %}
+          - class: text.ListItem
+            children:
+              - class: text.P
+                attrs:
+                  stylename: cv_paragraph
+                  text: {{ item | asbib(exclude_fields=['url']) | tojson }}
+{% endfor %}
+{% endif %}
+
+{% if conferences %}
+  - class: text.Section
+    attrs:
+      name: Conferences
+      stylename: cv_section
+    children:
+      - class: text.H
+        attrs:
+          outlinelevel: 1
+          stylename: cv_sectiontitle
+          text: {{ translations.conferences | tojson if translations and translations.conferences else 'Conferences' }}
+      - class: text.List
+        attrs:
+          stylename: cv_list
+        children:
+{% for item in conferences %}
+          - class: text.ListItem
+            children:
+              - class: text.P
+                attrs:
+                  stylename: cv_paragraph
+                  text: {{ item | asbib(exclude_fields=['url']) | tojson }}
+{% endfor %}
+{% endif %}
+
+{% if contact %}
+  - class: text.Section
+    attrs:
+      name: Contact
+      stylename: cv_section
+    children:
+      - class: text.H
+        attrs:
+          outlinelevel: 1
+          stylename: cv_sectiontitle_break
+          text: {{ translations.contact | tojson if translations and translations.contact else 'Contact' }}
+{% if contact.email %}
+{% for email in contact.email | aslist %}
+      - class: text.P
+        attrs:
+          stylename: cv_paragraph
+        children:
+          - class: text.Span
+            attrs:
+              stylename: cv_icon
+              text: "🖂"
+          - class: text.S
+            attrs:
+              c: 2
+          - class: text.Span
+            attrs:
+              stylename: cv_text
+              text: {{ email | tojson }}
+{% endfor %}
+{% endif %}
+{% if contact.website %}
+{% for website in contact.website | aslist %}
+      - class: text.P
+        attrs:
+          stylename: cv_paragraph
+        children:
+          - class: text.Span
+            attrs:
+              stylename: cv_icon
+              text: "🌐"
+          - class: text.S
+            attrs:
+              c: 2
+          - class: text.Span
+            attrs:
+              stylename: cv_text
+              text: {{ website | tojson }}
+{% endfor %}
+{% endif %}
+{% if contact.telephone %}
+{% for telephone in contact.telephone | aslist %}
+      - class: text.P
+        attrs:
+          stylename: cv_paragraph
+        children:
+          - class: text.Span
+            attrs:
+              stylename: cv_icon
+              text: "📞"
+          - class: text.S
+            attrs:
+              c: 2
+          - class: text.Span
+            attrs:
+              stylename: cv_text
+              text: {{ telephone | tojson }}
+{% endfor %}
+{% endif %}
+{% if False and contact.location %}
+{% for location in contact.location | aslist %}
+      - class: text.P
+        attrs:
+          stylename: cv_paragraph
+        children:
+          - class: text.Span
+            attrs:
+              stylename: cv_icon
+              text: "📍"
+          - class: text.S
+            attrs:
+              c: 2
+          - class: text.Span
+            attrs:
+              stylename: cv_text
+              text: {{ (location.city+", "+location.country) | tojson }}
+{% endfor %}
+{% endif %}
+{% endif %}
+
+{% if skills %}
+  - class: text.Section
+    attrs:
+      name: Skills
+      stylename: cv_section
+    children:
+      - class: text.H
+        attrs:
+          outlinelevel: 1
+          stylename: cv_sectiontitle
+          text: {{ translations.skills | tojson if translations and translations.skills else 'Skills' }}
+{% for item in skills %}
+      - class: text.P
+        attrs:
+          stylename: cv_skill
+        children:
+          - class: text.Span
+            attrs:
+              stylename: cv_skillname
+              text: {{ item.name | tojson }}
+{% if item.label %}
+          - class: text.Tab
+          - class: text.Span
+            attrs:
+              stylename: cv_skilllabel
+              text: {{ item.label | tojson }}
+{% elif item.level %}
+          - class: text.Tab
+{% endif %}
+{% if item.level %}
+          - class: text.Tab
+{% for i in range(item.level) %}
+          - class: text.Span
+            attrs:
+              stylename: cv_skilllevel
+              text: "⬤"
+{% endfor %}
+{% for i in range(5-item.level) %}
+          - class: text.Span
+            attrs:
+              stylename: cv_skilllevel
+              text: "◯"
+{% endfor %}
+{% endif %}
+{% if item.keywords %}
+      - class: text.List
+        attrs:
+          stylename: cv_list
+        children:
+{% for keyword in item.keywords | aslist %}
+          - class: text.ListItem
+            children:
+              - class: text.P
+                attrs:
+                  stylename: cv_paragraph
+                  text: {{ keyword | tojson }}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if languages %}
+  - class: text.Section
+    attrs:
+      name: Languages
+      stylename: cv_section
+    children:
+      - class: text.H
+        attrs:
+          outlinelevel: 1
+          stylename: cv_sectiontitle
+          text: {{ translations.languages | tojson if translations and translations.languages else 'Languages' }}
+{% for item in languages %}
+      - class: text.P
+        attrs:
+          stylename: cv_languages
+        children:
+          - class: text.Span
+            attrs:
+              stylename: cv_skillname
+              text: {{ item.name | tojson }}
+{% if item.label %}
+          - class: text.Tab
+          - class: text.Span
+            attrs:
+              stylename: cv_skilllabel
+              text: {{ item.label | tojson }}
+{% elif item.level %}
+          - class: text.Tab
+{% endif %}
+{% if item.level %}
+          - class: text.Tab
+{% for i in range(item.level) %}
+          - class: text.Span
+            attrs:
+              stylename: cv_skilllevel
+              text: "⬤"
+{% endfor %}
+{% for i in range(5-item.level) %}
+          - class: text.Span
+            attrs:
+              stylename: cv_skilllevel
+              text: "◯"
+{% endfor %}
+{% endif %}
+{% if item.keywords %}
+      - class: text.List
+        attrs:
+          stylename: cv_list
+        children:
+{% for keyword in item.keywords | aslist %}
+          - class: text.ListItem
+            children:
+              - class: text.P
+                attrs:
+                  stylename: cv_paragraph
+                  text: {{ keyword | tojson }}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if interests %}
+  - class: text.Section
+    attrs:
+      name: Interests
+      stylename: cv_section
+    children:
+      - class: text.H
+        attrs:
+          outlinelevel: 1
+          stylename: cv_sectiontitle
+          text: {{ translations.interests | tojson if translations and translations.interests else 'Interests' }}
+      - class: text.List
+        attrs:
+          stylename: cv_list
+        children:
+{% for item in interests | aslist %}
+          - class: text.ListItem
+            children:
+              - class: text.P
+                attrs:
+                  stylename: cv_paragraph
+                  text: {{ item | tojson }}
+{% endfor %}
+{% endif %}
+
+{% if False and references %}
+  - class: text.Section
+    attrs:
+      name: References
+      stylename: cv_section
+    children:
+      - class: text.H
+        attrs:
+          outlinelevel: 1
+          stylename: cv_sectiontitle
+          text: {{ translations.references | tojson if translations and translations.references else 'References' }}
+      - class: text.List
+        attrs:
+          stylename: cv_list
+        children:
+{% for item in references | aslist %}
+          - class: text.ListItem
+            children:
+              - class: text.P
+                attrs:
+                  stylename: cv_paragraph
+                  text: {{ item.name | tojson }}
+              - class: text.P
+                attrs:
+                  stylename: cv_paragraph
+                children:
+                  - class: text.S
+                    attrs:
+                      c: 4
+                  - class: text.Span
+                    attrs:
+                      stylename: cv_email
+                      text: {{ item.email | tojson }}
+{% endfor %}
+{% endif %}

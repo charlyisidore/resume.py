@@ -1,0 +1,382 @@
+name: Charly Lersteau
+headline: 运筹学研究员
+
+translations:
+  education: 教育经历
+  work: 工作经历
+  publications: 科学出版物
+  conferences: 科学展会
+  contact: 联系方式
+  skills: 特长技能
+  languages: 语言
+  interests: 兴趣爱好
+
+contact:
+  location:
+    address: My Street
+    postalCode: 42
+    city: My city
+    countryCode: FR
+    country: France
+    region: 
+  telephone: "+86 14242424242"
+  email: me@email.com
+  website: https://charly-lersteau.com
+  profiles:
+    - network: linkedin
+      username: charly-lersteau
+      url: https://www.linkedin.com/in/charly-lersteau
+    - network: google-scholar
+      username: WLDIxZIAAAAJ
+      url: https://scholar.google.com/citations?user=WLDIxZIAAAAJ
+    - network: orcid
+      username: 0000-0003-2948-6828
+      url: https://orcid.org/0000-0003-2948-6828
+
+education:
+  - period:
+      from: 2013-09-01
+      to: 2016-06-30
+    title: 数学、科学、信息与通信技术博士学位
+    organisation:
+      name: 南布列塔尼大学 - University of South Brittany
+      country: 法国
+    activities:
+      - 用于跟踪移动目标的无线传感器网络的优化
+      - 指导人 Marc Sevaux，André Rossi
+  - period:
+      from: 2011-09-01
+      to: 2013-06-30
+    title: 运筹学计算机科学优化硕士学位
+    organisation:
+      name: 南特大学
+      country: 法国
+    moreOrganisations:
+      - name: Université Libre de Bruxelles
+        country: Belgium
+      - name: University of Vienna
+        country: Austria
+    activities:
+      - 奥地利维也纳大学伊拉斯谟和硕士论文（5个月）
+      - 比利时布鲁塞尔大学伊拉斯谟研究（5个月）
+  - period:
+      from: 2010-09-01
+      to: 2011-06-30
+    title: 计算机科学一数学本科学位
+    organisation:
+      name: 南特大学
+      country: 法国
+
+work:
+  - period:
+      from: 2019-12-01
+    position: 研究员
+    employer:
+      name: 华中科技大学
+      country: 中国
+      website: http://www.hust.edu.cn/
+    activities:
+      - Crane scheduling and stacking problems
+  - period:
+      from: 2017-01-01
+      to: 2019-06-30
+    position: 研究员（2年半）
+    employer:
+      name: 利物浦约翰摩尔斯大学 - Liverpool John Moores University
+      country: 英国
+      website: https://ljmu.ac.uk/
+    activities:
+      - 港口集装箱装卸性能的优化
+      - 预测并减少铁路网络的反动延误
+      - 指导人 Trung Thanh Nguyen
+  - period:
+      from: 2014-10-01
+      to: 2014-12-30
+    position: 实习（3个月）
+    employer:
+      name: 萨勒诺大学 - University of Salerno
+      country: 意大利
+      website: https://web.unisa.it/en/home
+    activities:
+      - 用列生成解决无线传感器网络的目标跟踪问题
+      - 指导人 Raffaele Cerulli，Andrea Raiconi
+  - period:
+      from: 2013-02-01
+      to: 2013-06-30
+    position: 研究访问（5个月）
+    employer:
+      name: 维也纳大学 - University of Vienna
+      country: 奥地利
+      website: https://www.univie.ac.at/en/
+    activities:
+      - 用单源和容量约束解决多目标设施选址问题
+      - 指导人 Fabien Tricoire，Xavier Gandibleux，Anthony Przybylski
+
+work_hidden:
+  - period:
+      from: 2012-02-01
+      to: 2012-06-30
+    position: 研究工作（5个月）
+    employer:
+      name: 南特大学 - University of Nantes
+      country: 法国 
+      website: https://english.univ-nantes.fr/
+    activities:
+      - 集合覆盖问题的并行化包围抓取元启发式算法
+      - 指导人 Xavier Gandibleux，Anthony Przybylski
+
+publications:
+    -
+        type: article
+        doi: 10.1016/j.trc.2019.03.014
+        url: https://doi.org/10.1016%2Fj.trc.2019.03.014
+        year: '2019'
+        month: jun
+        publisher: Elsevier {BV}
+        volume: '103'
+        pages: 158--173
+        title: Real-time seat allocation for minimizing boarding/alighting time and
+            improving quality of service and safety for passengers（实时分配座位，减少乘客上下车时间，提高服务质量和安全）
+        journal: 'Transportation Research Part C: Emerging Technologies'
+        author:
+        -   first: Danial
+            last: Yazdani
+        -   first: Mohammad
+            middle: Nabi
+            last: Omidvar
+        -   first: Igor
+            last: Deplano
+        -   first: Charly
+            last: Lersteau
+        -   first: Ahmed
+            last: Makki
+        -   first: Jin
+            last: Wang
+        -   first: Trung
+            middle: Thanh
+            last: Nguyen
+    -
+        type: article
+        doi: 10.1016/j.ejor.2017.08.045
+        url: https://doi.org/10.1016%2Fj.ejor.2017.08.045
+        year: '2018'
+        month: mar
+        publisher: Elsevier {BV}
+        volume: '265'
+        number: '3'
+        pages: 882--894
+        title: Minimum energy target tracking with coverage guarantee in wireless
+            sensor networks（无线传感器网络中最小能量目标跟踪覆盖保证）
+        journal: European Journal of Operational Research
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Andr{\'{e}}
+            last: Rossi
+        -   first: Marc
+            last: Sevaux
+    -
+        type: article
+        doi: 10.1016/j.ejor.2016.01.018
+        url: https://doi.org/10.1016%2Fj.ejor.2016.01.018
+        year: '2016'
+        month: jul
+        publisher: Elsevier {BV}
+        volume: '252'
+        number: '2'
+        pages: 407--417
+        title: Robust scheduling of wireless sensor networks for target tracking under
+            uncertainty（无线传感器网络的鲁棒调度用于不确定性的目标追踪）
+        journal: European Journal of Operational Research
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Andr{\'{e}}
+            last: Rossi
+        -   first: Marc
+            last: Sevaux
+
+conferences:
+    -
+        type: inproceedings
+        title: '{Maximization of residual capacities for target tracking in wireless sensor networks（最大化无限传感器网络目标跟踪的剩余容量）}'
+        url: http://www.isco2016.it/images/absbook_ISCO16.pdf#page=24
+        booktitle: '{ISCO 2016, Combinatorial Optimization: 4th International Symposium}'
+        address: Vietri sul Mare, Italy
+        year: '2016'
+        month: May
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Marc
+            last: Sevaux
+        -   first: Andr{\'e}
+            last: Rossi
+        -   first: Raffaele
+            last: Cerulli
+        -   first: Andrea
+            last: Raiconi
+    -
+        type: inproceedings
+        title: '{Ordonnancement robuste de r{\''e}seaux de capteurs sans fil pour
+            le suivi d''une cible mobile sous incertitudes}'
+        url: https://hal.archives-ouvertes.fr/hal-01275956
+        booktitle: '{ROADEF: Recherche Op{\''e}rationnelle et d''Aide {\`a} la D{\''e}cision}'
+        address: Compi{\`e}gne, France
+        year: '2016'
+        month: February
+        keywords: robustesse ; rayon de stabilit{\'e} ; ordonnancement ; r{\'e}seaux
+            de capteurs ; cible mobile
+        hal_id: hal-01275956
+        hal_version: v1
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Andr{\'e}
+            last: Rossi
+        -   first: Marc
+            last: Sevaux
+    -
+        type: inproceedings
+        title: '{Optimisation de l''utilisation de r{\''e}seaux de capteurs sans fil
+            pour le suivi de cibles mobiles sous incertitudes}'
+        url: https://hal.archives-ouvertes.fr/hal-01129045
+        booktitle: '{ROADEF, 16{\`e}me congr{\`e}s de la Soci{\''e}t{\''e} Fran{\c
+            c}aise de Recherche Op{\''e}rationnelle et d''Aide {\`a} la D{\''e}cision}'
+        address: Marseille, France
+        year: '2015'
+        month: February
+        hal_id: hal-01129045
+        hal_version: v1
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Andr{\'e}
+            last: Rossi
+        -   first: Marc
+            last: Sevaux
+    -
+        type: inproceedings
+        title: '{Reconfiguration de r{\''e}seaux de capteurs sans fil pour le suivi
+            de cibles mobiles}'
+        url: https://hal.archives-ouvertes.fr/hal-00946561
+        booktitle: '{ROADEF - 15{\`e}me congr{\`e}s annuel de la Soci{\''e}t{\''e}
+            fran{\c c}aise de recherche op{\''e}rationnelle et d''aide {\`a} la d{\''e}cision}'
+        address: Bordeaux, France
+        organization: '{Soci{\''e}t{\''e} fran{\c c}aise de recherche op{\''e}rationnelle
+            et d''aide {\`a} la d{\''e}cision}'
+        hal_local_reference: Optimisation dans les r{\'e}seaux et applications t{\'e}l{\'e}com
+        year: '2014'
+        month: February
+        keywords: WSN ; Target tracking ; trajectoire
+        hal_id: hal-00946561
+        hal_version: v1
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Andr{\'e}
+            last: Rossi
+        -   first: Marc
+            last: Sevaux
+
+conferences_hidden:
+    -
+        type: incollection
+        doi: 10.1007/978-3-319-12970-9_14
+        url: https://doi.org/10.1007%2F978-3-319-12970-9_14
+        year: '2014'
+        publisher: Springer International Publishing
+        pages: 123--130
+        title: Multiple Mobile Target Tracking in Wireless Sensor Networks
+        booktitle: Swarm Intelligence Based Optimization
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Marc
+            last: Sevaux
+        -   first: Andr{\'{e}}
+            last: Rossi
+
+skills:
+  - name: 优化
+    label: 高级
+    level: 5
+    keywords:
+      - 建模
+      - 优化组合
+      - 多目标优化
+      - 线性规划
+      - 元启发式算法
+      - 运算复杂性理论
+      - 图形理论
+  - name: 编程语言
+    label: 高级
+    level: 5
+    keywords:
+      - C，C++，Python，Java
+      - CPLEX，SCIP
+      - Pandas，SQL
+      - HTML，Javascript，CSS
+  - name: 写作
+    label: 高级
+    level: 5
+    keywords:
+      - LaTeX，Beamer
+      - 文献评论
+      - 科学学术论文和报告
+  - name: 数据科学
+    label: 一般
+    level: 2
+    keywords:
+      - 数据分析
+      - 链接数据源
+
+languages:
+  - name: 法语
+    label: 母语
+    level: 5
+  - name: 英语
+    label: 流利
+    level: 4
+  - name: 意大利语
+    label: 一般
+    level: 2
+  - name: 汉语
+    label: HSK1
+    level: 1
+
+interests:
+  - 旅游
+  - 哲学
+  - 跳舞
+  - 功夫(洪家拳)
+  - 科幻片,蒸汽朋克
+
+references:
+  - name: Trung Thanh Nguyen
+    email: T.T.Nguyen@ljmu.ac.uk
+    website: https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-engineering-and-technology/department-of-maritime-and-mechanical-engineering/trung-thanh-nguyen
+  - name: Marc Sevaux
+    email: marc.sevaux@univ-ubs.fr
+    website: http://www-labsticc.univ-ubs.fr/~sevaux/
+  - name: André Rossi
+    email: andre.rossi@daupine.psl.eu
+    website: https://www.lamsade.dauphine.fr/~arossi/
+  - name: Raffaele Cerulli
+    email: raffaele@unisa.it
+    website: http://www.dipmat2.unisa.it/people/cerulli/www/
+  - name: Andrea Raiconi
+    email: araiconi@unisa.it
+    website: http://www.dipmat2.unisa.it/people/raiconi/
+  - name: Fabien Tricoire
+    email: fabien.tricoire@univie.ac.at
+    website: https://homepage.univie.ac.at/fabien.tricoire/
+  - name: Xavier Gandibleux
+    email: Xavier.Gandibleux@univ-nantes.fr
+    website: https://xgandibleux.github.io/
+  - name: Anthony Przybylski
+    email: Anthony.Przybylski@univ-nantes.fr
+    website: https://www.univ-nantes.fr/site-de-l-universite-de-nantes/anthony-przybylski--114099.kjsp
+
+memberships:
+  - Membre du comité [Evostar 2018](http://www.evostar.org/2018/cfp_evostoc.php) (Parma)

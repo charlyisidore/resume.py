@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ name }}{% if headline %} - {{ headline }}{% endif %}</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<style>
+				@page {
+					size: A4;
+					margin: 0;
+				}
+				body {
+					width: 210mm;
+					margin: auto;
+					font-family: "Open Sans", sans-serif;
+					font-size: 8pt;
+					/*border: 1px solid #eee;
+					box-shadow: 0 0 2mm rgba(0,0,0,0.5);*/
+				}
+				.page {
+					/*margin: 5mm 5mm 10mm 5mm;*/
+					overflow: hidden;
+				}
+				a {
+					text-decoration: none;
+					color: dodgerblue;
+				}
+				.material-icons
+				{
+					font-size: 100%;
+				}
+				header {
+					margin: 0 0 4mm 0;
+					padding: 0;
+				}
+				aside {
+					width: 30%;
+					float: left;
+				}
+				main {
+					margin-left: 30%;
+					width: 69%;
+					border-left: 1px solid #ddd;
+				}
+				footer {
+					clear: both;
+				}
+				aside > .content {
+					margin: 10mm 4mm 10mm 5mm;
+				}
+				main > .content {
+					margin: 10mm 5mm 10mm 4mm;
+					display: inline-block;
+				}
+				footer > .content {
+					margin: 5mm 5mm 10mm 5mm;
+				}
+				header h1.name {
+					font-size: 250%;
+					font-weight: 600;
+					margin: 0;
+					padding: 0;
+				}
+				header h2.headline {
+					font-size: 140%;
+					font-weight: normal;
+					margin: 0;
+					padding: 0;
+					color: dodgerblue;
+				}
+				section {
+					margin: 3mm 0 6mm 0;
+					padding: 0;
+				}
+				section h2 {
+					font-size: 100%;
+					font-weight: 700;
+					margin: 3mm 0;
+					padding: 0;
+					color: gray;
+					text-transform: uppercase;
+				}
+				article {
+					margin: 2mm 0;
+					padding: 0;
+				}
+				article h3 {
+					font-size: 130%;
+					font-weight: 600;
+					margin: 0;
+					padding: 0;
+				}
+				main article > div {
+					margin: 0;
+					padding: 0;
+					color: gray;
+				}
+				article .organisation.name,
+				article .employer.name {
+					font-size: 105%;
+					font-weight: 600;
+					color: dodgerblue;
+					margin-right: 1mm;
+				}
+				article .period {
+					font-size: 95%;
+					margin-left: 1mm;
+					margin-right: 1mm;
+				}
+				article .period .from::after {
+					content: " - ";
+				}
+				article .country {
+					font-size: 95%;
+					margin-left: 1mm;
+				}
+				ul {
+					font-size: 100%;
+					list-style: none;
+					margin: 0;
+					padding: 0 4mm;
+				}
+				ul li::before {
+					content: "-";
+					display: inline-block;
+					width: 0.7em;
+					margin-left: -1em;
+				}
+				.contact {
+					margin-top: 0;
+				}
+				.contact .material-icons {
+					font-size: 120%;
+					margin-right: 0.5em;
+				}
+				aside article .name {
+					margin-right: 1mm;
+					font-size: 120%;
+				}
+				aside section.skills article .name {
+					font-weight: bold;
+				}
+				aside article .label {
+					margin-left: 1mm;
+					color: gray;
+				}
+				aside article .level {
+					display: block;
+					float: right;
+					color: gray;
+					font-size: 90%;
+					line-height: 160%;
+					vertical-align: text-bottom;
+				}
+				aside article .level .on::after {
+					content: "⬤";
+				}
+				aside article .level .off::after {
+					content: "◯";
+				}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+
+			<aside>
+				<div class="content">
+
+					{% if contact %}
+						<section class="contact">
+							<h2>Contact</h2>
+							{% if contact.email %}
+								{% for email in contact.email | aslist %}
+									<article class="email">
+										<i class="material-icons">email</i>
+										<a href="mailto:{{ email }}">{{ email }}</a>
+									</article>
+								{% endfor %}
+							{% endif %}
+							{% if contact.website %}
+								{% for website in contact.website | aslist %}
+									<article class="website">
+										<i class="material-icons">public</i>
+										<a href="{{ website }}">{{ website }}</a>
+									</article>
+								{% endfor %}
+							{% endif %}
+							{% if contact.telephone %}
+								{% for telephone in contact.telephone | aslist %}
+									<article class="telephone">
+										<i class="material-icons">phone</i>
+										<span>{{ telephone }}</span>
+									</article>
+								{% endfor %}
+							{% endif %}
+						</section>
+					{% endif %}
+
+					{% if skills %}
+						<section class="skills">
+							<h2>Skills</h2>
+							{% for item in skills %}
+								<article>
+									<span class="name">{{ item.name }}</span>
+									{% if False and item.label %}
+										<span class="label">{{ item.label }}</span>
+									{% endif %}
+									{% if item.level %}
+										<span class="level">
+											{% for i in range(item.level) %}
+												<span class="level-bar on"></span>
+											{% endfor %}
+											{% for i in range(5-item.level) %}
+												<span class="level-bar off"></span>
+											{% endfor %}
+										</span>
+									{% endif %}
+									<ul class="keywords">
+										{% for keyword in item.keywords | aslist %}
+											<li>{{ keyword }}</li>
+										{% endfor %}
+									</ul>
+								</article>
+							{% endfor %}
+						</section>
+					{% endif %}
+
+					{% if languages %}
+						<section class="languages">
+							<h2>Languages</h2>
+							{% for item in languages %}
+								<article>
+									<span class="name">{{ item.name }}</span>
+									{% if item.label %}
+										<span class="label">{{ item.label }}</span>
+									{% endif %}
+									{% if item.level %}
+										<span class="level">
+											{% for i in range(item.level) %}
+												<span class="level-bar on"></span>
+											{% endfor %}
+											{% for i in range(5-item.level) %}
+												<span class="level-bar off"></span>
+											{% endfor %}
+										</span>
+									{% endif %}
+								</article>
+							{% endfor %}
+						</section>
+					{% endif %}
+
+					{% if interests %}
+						<section class="interests">
+							<h2>Interests</h2>
+							<ul>
+								{% for item in interests %}
+									<li>{{ item }}</li>
+								{% endfor %}
+							</ul>
+						</section>
+					{% endif %}
+
+					{% if references %}
+						<section class="references">
+							<h2>References</h2>
+							<ul>
+								{% for item in references %}
+									<li>
+										<a href="{{ item.website }}">{{ item.name }}</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</section>
+					{% endif %}
+
+				</div>
+			</aside>
+
+			<main>
+				<div class="content">
+
+					<header>
+						<h1 class="name">{{ name }}</h1>
+						{% if headline %}
+							<h2 class="headline">{{ headline }}</h2>
+						{% endif %}
+					</header>
+
+					{% if education %}
+						<section class="education">
+							<h2>Education</h2>
+							{% for item in education %}
+								<article>
+									<h3>{{ item.title }}</h3>
+									<div>
+										<span class="organisation name">{{ item.organisation.name }}</span>
+										<span class="period">
+											<span class="from">{{ item.period.from | asdatetime("%Y") }}</span>
+											<span class="to">{% if item.period.to %}{{ item.period.to | asdatetime("%Y") }}{% else %}today{% endif %}</span>
+										</span>
+										<span class="organisation country">{{ item.organisation.country }}</span>
+									</div>
+									<ul class="activities">
+										{% for activity in item.activities | aslist %}
+											<li>{{ activity }}</li>
+										{% endfor %}
+									</ul>
+								</article>
+							{% endfor %}
+						</section>
+					{% endif %}
+
+					{% if work %}
+						<section class="work">
+							<h2>Experience</h2>
+							{% for item in work %}
+								<article>
+									<h3>{{ item.position }}</h3>
+									<div>
+										<span class="employer name">{{ item.employer.name }}</span>
+										<span class="period">
+											<span class="from">{{ item.period.from | asdatetime("%b %Y") }}</span>
+											<span class="to">{% if item.period.to %}{{ item.period.to | asdatetime("%b %Y") }}{% else %}today{% endif %}</span>
+										</span>
+										<span class="employer country">{{ item.employer.country }}</span>
+									</div>
+									<ul class="activities">
+										{% for activity in item.activities | aslist %}
+											<li>{{ activity }}</li>
+										{% endfor %}
+									</ul>
+								</article>
+							{% endfor %}
+						</section>
+					{% endif %}
+
+					{% if publications %}
+						<section class="publications">
+							<h2>Publications</h2>
+							<ul>
+								{% for item in publications %}
+									<li>{{ item | asbib(exclude_fields=['url']) }}</li>
+								{% endfor %}
+							</ul>
+						</section>
+					{% endif %}
+
+					{% if conferences %}
+						<section class="conferences">
+							<h2>Conferences</h2>
+							<ul>
+								{% for item in conferences %}
+									<li>{{ item | asbib(exclude_fields=['url']) }}</li>
+								{% endfor %}
+							</ul>
+						</section>
+					{% endif %}
+
+				</div>
+			</main>
+
+			<footer>
+				<div class="content">
+				</div>
+			</footer>
+
+		</div>
+	</body>
+</html>

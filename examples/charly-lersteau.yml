@@ -1,0 +1,375 @@
+name: Charly Lersteau
+headline: Research Fellow in Operations Research
+
+contact:
+  location:
+    address: My street
+    postalCode: 42
+    city: My city
+    countryCode: FR
+    country: France
+    region: 
+  telephone: "+33642424242"
+  email: me@email.com
+  website: https://charly-lersteau.fr
+  profiles:
+    - network: linkedin
+      username: charly-lersteau
+      url: https://www.linkedin.com/in/charly-lersteau
+    - network: google-scholar
+      username: WLDIxZIAAAAJ
+      url: https://scholar.google.com/citations?user=WLDIxZIAAAAJ
+    - network: orcid
+      username: 0000-0003-2948-6828
+      url: https://orcid.org/0000-0003-2948-6828
+
+education:
+  - period:
+      from: 2013-09-01
+      to: 2016-06-30
+    title: PhD Mathematics, Sciences, Information and Communication Technologies
+    organisation:
+      name: University of Southern Brittany
+      country: France
+    activities:
+      - Optimization of wireless sensor networks for tracking mobile targets
+      - Directed by Marc Sevaux, André Rossi
+  - period:
+      from: 2011-09-01
+      to: 2013-06-30
+    title: MSc Computer Science - Optimisation in Operations Research
+    organisation:
+      name: University of Nantes
+      country: France
+    moreOrganisations:
+      - name: Université Libre de Bruxelles
+        country: Belgium
+      - name: University of Vienna
+        country: Austria
+    activities:
+      - Erasmus and Master thesis at University of Vienna, Austria (5 months)
+      - Erasmus study at Université Libre de Bruxelles, Belgium (5 months)
+      - Ranked 2nd in the class
+  - period:
+      from: 2010-09-01
+      to: 2011-06-30
+    title: BSc Computer Science - Mathematics
+    organisation:
+      name: University of Nantes
+      country: France
+    activities:
+      - Ranked 2nd in the class
+
+work:
+  - period:
+      from: 2019-12-01
+    position: Research Fellow
+    employer:
+      name: Huazhong University of Science and Technology
+      country: China
+      website: http://english.hust.edu.cn/
+    activities:
+      - Crane scheduling and stacking problems
+  - period:
+      from: 2017-01-01
+      to: 2019-06-30
+    position: Research Fellow (2 years ½)
+    employer:
+      name: Liverpool John Moores University
+      country: United Kingdom
+      website: https://ljmu.ac.uk/
+    activities:
+      - Optimization of container-handling performance in ports
+      - Anticipating and mitigating reactionary delays in railway networks
+      - Directed by Trung Thanh Nguyen
+  - period:
+      from: 2014-10-01
+      to: 2014-12-30
+    position: Internship (3 months)
+    employer:
+      name: University of Salerno
+      country: Italy
+      website: https://web.unisa.it/en/home
+    activities:
+      - Solving target tracking problems with wireless sensor networks using column generation
+      - Directed by Raffaele Cerulli, Andrea Raiconi
+  - period:
+      from: 2013-02-01
+      to: 2013-06-30
+    position: Research visit (5 months)
+    employer:
+      name: University of Vienna
+      country: Austria
+      website: https://www.univie.ac.at/en/
+    activities:
+      - On solving the multi-objective facility location problem with single sourcing and capacity constraints
+      - Directed by Fabien Tricoire, Xavier Gandibleux, Anthony Przybylski
+
+work_hidden:
+  - period:
+      from: 2012-02-01
+      to: 2012-06-30
+    position: Research work (5 months)
+    employer:
+      name: University of Nantes
+      country: France 
+      website: https://english.univ-nantes.fr/
+    activities:
+      - Parallelizing GRASP metaheuristic for the set covering problem
+      - Directed by Xavier Gandibleux, Anthony Przybylski
+
+publications:
+    -
+        type: article
+        doi: 10.1016/j.trc.2019.03.014
+        url: https://doi.org/10.1016%2Fj.trc.2019.03.014
+        year: '2019'
+        month: jun
+        publisher: Elsevier {BV}
+        volume: '103'
+        pages: 158--173
+        title: Real-time seat allocation for minimizing boarding/alighting time and
+            improving quality of service and safety for passengers
+        journal: 'Transportation Research Part C: Emerging Technologies'
+        author:
+        -   first: Danial
+            last: Yazdani
+        -   first: Mohammad
+            middle: Nabi
+            last: Omidvar
+        -   first: Igor
+            last: Deplano
+        -   first: Charly
+            last: Lersteau
+        -   first: Ahmed
+            last: Makki
+        -   first: Jin
+            last: Wang
+        -   first: Trung
+            middle: Thanh
+            last: Nguyen
+    -
+        type: article
+        doi: 10.1016/j.ejor.2017.08.045
+        url: https://doi.org/10.1016%2Fj.ejor.2017.08.045
+        year: '2018'
+        month: mar
+        publisher: Elsevier {BV}
+        volume: '265'
+        number: '3'
+        pages: 882--894
+        title: Minimum energy target tracking with coverage guarantee in wireless
+            sensor networks
+        journal: European Journal of Operational Research
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Andr{\'{e}}
+            last: Rossi
+        -   first: Marc
+            last: Sevaux
+    -
+        type: article
+        doi: 10.1016/j.ejor.2016.01.018
+        url: https://doi.org/10.1016%2Fj.ejor.2016.01.018
+        year: '2016'
+        month: jul
+        publisher: Elsevier {BV}
+        volume: '252'
+        number: '2'
+        pages: 407--417
+        title: Robust scheduling of wireless sensor networks for target tracking under
+            uncertainty
+        journal: European Journal of Operational Research
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Andr{\'{e}}
+            last: Rossi
+        -   first: Marc
+            last: Sevaux
+
+conferences:
+    -
+        type: inproceedings
+        title: '{Maximization of residual capacities for target tracking in wireless sensor networks}'
+        url: http://www.isco2016.it/images/absbook_ISCO16.pdf#page=24
+        booktitle: '{ISCO 2016, Combinatorial Optimization: 4th International Symposium}'
+        address: Vietri sul Mare, Italy
+        year: '2016'
+        month: May
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Marc
+            last: Sevaux
+        -   first: Andr{\'e}
+            last: Rossi
+        -   first: Raffaele
+            last: Cerulli
+        -   first: Andrea
+            last: Raiconi
+    -
+        type: inproceedings
+        title: '{Ordonnancement robuste de r{\''e}seaux de capteurs sans fil pour
+            le suivi d''une cible mobile sous incertitudes}'
+        url: https://hal.archives-ouvertes.fr/hal-01275956
+        booktitle: '{ROADEF: Recherche Op{\''e}rationnelle et d''Aide {\`a} la D{\''e}cision}'
+        address: Compi{\`e}gne, France
+        year: '2016'
+        month: February
+        keywords: robustesse ; rayon de stabilit{\'e} ; ordonnancement ; r{\'e}seaux
+            de capteurs ; cible mobile
+        hal_id: hal-01275956
+        hal_version: v1
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Andr{\'e}
+            last: Rossi
+        -   first: Marc
+            last: Sevaux
+    -
+        type: inproceedings
+        title: '{Optimisation de l''utilisation de r{\''e}seaux de capteurs sans fil
+            pour le suivi de cibles mobiles sous incertitudes}'
+        url: https://hal.archives-ouvertes.fr/hal-01129045
+        booktitle: '{ROADEF, 16{\`e}me congr{\`e}s de la Soci{\''e}t{\''e} Fran{\c
+            c}aise de Recherche Op{\''e}rationnelle et d''Aide {\`a} la D{\''e}cision}'
+        address: Marseille, France
+        year: '2015'
+        month: February
+        hal_id: hal-01129045
+        hal_version: v1
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Andr{\'e}
+            last: Rossi
+        -   first: Marc
+            last: Sevaux
+    -
+        type: inproceedings
+        title: '{Reconfiguration de r{\''e}seaux de capteurs sans fil pour le suivi
+            de cibles mobiles}'
+        url: https://hal.archives-ouvertes.fr/hal-00946561
+        booktitle: '{ROADEF - 15{\`e}me congr{\`e}s annuel de la Soci{\''e}t{\''e}
+            fran{\c c}aise de recherche op{\''e}rationnelle et d''aide {\`a} la d{\''e}cision}'
+        address: Bordeaux, France
+        organization: '{Soci{\''e}t{\''e} fran{\c c}aise de recherche op{\''e}rationnelle
+            et d''aide {\`a} la d{\''e}cision}'
+        hal_local_reference: Optimisation dans les r{\'e}seaux et applications t{\'e}l{\'e}com
+        year: '2014'
+        month: February
+        keywords: WSN ; Target tracking ; trajectoire
+        hal_id: hal-00946561
+        hal_version: v1
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Andr{\'e}
+            last: Rossi
+        -   first: Marc
+            last: Sevaux
+
+conferences_hidden:
+    -
+        type: incollection
+        doi: 10.1007/978-3-319-12970-9_14
+        url: https://doi.org/10.1007%2F978-3-319-12970-9_14
+        year: '2014'
+        publisher: Springer International Publishing
+        pages: 123--130
+        title: Multiple Mobile Target Tracking in Wireless Sensor Networks
+        booktitle: Swarm Intelligence Based Optimization
+        author:
+        -   first: Charly
+            last: Lersteau
+        -   first: Marc
+            last: Sevaux
+        -   first: Andr{\'{e}}
+            last: Rossi
+
+skills:
+  - name: Optimization
+    label: Advanced
+    level: 5
+    keywords:
+      - Mathematical modeling
+      - Combinatorial optimization
+      - Multi-objective optimization
+      - Linear programming
+      - Metaheuristics
+      - Complexity theory
+      - Graph theory
+  - name: Programming
+    label: Advanced
+    level: 5
+    keywords:
+      - C, C++, Python, Java
+      - CPLEX, SCIP
+      - Pandas, SQL
+      - HTML, Javascript, CSS
+  - name: Writing
+    label: Advanced
+    level: 5
+    keywords:
+      - LaTeX, Beamer
+      - Literature review
+      - Technical writing
+  - name: Data science
+    label: Elementary
+    level: 2
+    keywords:
+      - Data parsing and analysis
+      - Link different data sources
+
+languages:
+  - name: French
+    label: Native speaker
+    level: 5
+  - name: English
+    label: Fluent
+    level: 4
+  - name: Italian
+    label: Elementary
+    level: 2
+  - name: Mandarin
+    label: HSK1
+    level: 1
+
+interests:
+  - Traveling
+  - Philosophy
+  - Salsa dance
+  - Kung fu (Hung gar)
+  - Science-fiction, Steampunk
+
+references:
+  - name: Trung Thanh Nguyen
+    email: T.T.Nguyen@ljmu.ac.uk
+    website: https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-engineering-and-technology/department-of-maritime-and-mechanical-engineering/trung-thanh-nguyen
+  - name: Marc Sevaux
+    email: marc.sevaux@univ-ubs.fr
+    website: http://www-labsticc.univ-ubs.fr/~sevaux/
+  - name: André Rossi
+    email: andre.rossi@daupine.psl.eu
+    website: https://www.lamsade.dauphine.fr/~arossi/
+  - name: Raffaele Cerulli
+    email: raffaele@unisa.it
+    website: http://www.dipmat2.unisa.it/people/cerulli/www/
+  - name: Andrea Raiconi
+    email: araiconi@unisa.it
+    website: http://www.dipmat2.unisa.it/people/raiconi/
+  - name: Fabien Tricoire
+    email: fabien.tricoire@univie.ac.at
+    website: https://homepage.univie.ac.at/fabien.tricoire/
+  - name: Xavier Gandibleux
+    email: Xavier.Gandibleux@univ-nantes.fr
+    website: https://xgandibleux.github.io/
+  - name: Anthony Przybylski
+    email: Anthony.Przybylski@univ-nantes.fr
+    website: https://www.univ-nantes.fr/site-de-l-universite-de-nantes/anthony-przybylski--114099.kjsp
+
+memberships:
+  - Committee member of [Evostar 2018](http://www.evostar.org/2018/cfp_evostoc.php) (Parma)
