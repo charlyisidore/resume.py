@@ -25,3 +25,18 @@ Export in HTML format:
 ```bash
 ./resume.py examples/charly-lersteau.yml -f html -t templates/resume.html.j2 -o resume.html
 ```
+
+## Dependencies
+
+`resume.py` requires following python packages:
+
+- `Jinja2`
+- `odfpy`
+- `pybtex`
+- `python-dateutil`
+- `python-docx`
+
+## License
+
+This software is licensed under the GPLv3.
+Please see the `LICENSE` file for further information.
