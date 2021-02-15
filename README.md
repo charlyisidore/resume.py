@@ -17,13 +17,13 @@ The folder `examples/` contains YAML data files and `templates/` contains the ji
 Export in ODT format:
 
 ```bash
-./resume.py examples/charly-lersteau.yml -f odt -t templates/resume.odt.yml.j2 -o resume.odt
+python3 resume.py examples/charly-lersteau.yml -f odt -t templates/resume.odt.yml.j2 -o resume.odt
 ```
 
 Export in HTML format:
 
 ```bash
-./resume.py examples/charly-lersteau.yml -f html -t templates/resume.html.j2 -o resume.html
+python3 resume.py examples/charly-lersteau.yml -f html -t templates/resume.html.j2 -o resume.html
 ```
 
 ## Dependencies
@@ -33,6 +33,7 @@ Export in HTML format:
 - `Jinja2`
 - `odfpy`
 - `pybtex`
+- `pybtex-apa-style`
 - `python-dateutil`
 - `python-docx`
 
