@@ -49,7 +49,7 @@ education:
       to: 2013-06-30
     title: Master Informatique - Optimisation en Recherche Opérationnelle
     organisation:
-      name: University de Nantes
+      name: Université de Nantes
       country: France
     moreOrganisations:
       - name: Université Libre de Bruxelles
@@ -64,7 +64,7 @@ education:
       to: 2011-06-30
     title: Licence Informatique - Mathématiques
     organisation:
-      name: University de Nantes
+      name: Université de Nantes
       country: France
 
 work:
@@ -126,75 +126,12 @@ work_hidden:
       - Dirigé par Xavier Gandibleux, Anthony Przybylski
 
 publications:
-    -
-        type: article
-        doi: 10.1016/j.trc.2019.03.014
-        url: https://doi.org/10.1016%2Fj.trc.2019.03.014
-        year: '2019'
-        month: jun
-        publisher: Elsevier {BV}
-        volume: '103'
-        pages: 158--173
-        title: Real-time seat allocation for minimizing boarding/alighting time and
-            improving quality of service and safety for passengers
-        journal: 'Transportation Research Part C: Emerging Technologies'
-        author:
-        -   first: Danial
-            last: Yazdani
-        -   first: Mohammad
-            middle: Nabi
-            last: Omidvar
-        -   first: Igor
-            last: Deplano
-        -   first: Charly
-            last: Lersteau
-        -   first: Ahmed
-            last: Makki
-        -   first: Jin
-            last: Wang
-        -   first: Trung
-            middle: Thanh
-            last: Nguyen
-    -
-        type: article
-        doi: 10.1016/j.ejor.2017.08.045
-        url: https://doi.org/10.1016%2Fj.ejor.2017.08.045
-        year: '2018'
-        month: mar
-        publisher: Elsevier {BV}
-        volume: '265'
-        number: '3'
-        pages: 882--894
-        title: Minimum energy target tracking with coverage guarantee in wireless
-            sensor networks
-        journal: European Journal of Operational Research
-        author:
-        -   first: Charly
-            last: Lersteau
-        -   first: Andr{\'{e}}
-            last: Rossi
-        -   first: Marc
-            last: Sevaux
-    -
-        type: article
-        doi: 10.1016/j.ejor.2016.01.018
-        url: https://doi.org/10.1016%2Fj.ejor.2016.01.018
-        year: '2016'
-        month: jul
-        publisher: Elsevier {BV}
-        volume: '252'
-        number: '2'
-        pages: 407--417
-        title: Robust scheduling of wireless sensor networks for target tracking under
-            uncertainty
-        journal: European Journal of Operational Research
-        author:
-        -   first: Charly
-            last: Lersteau
-        -   first: Andr{\'{e}}
-            last: Rossi
-        -   first: Marc
-            last: Sevaux
+  - bib/Lersteau_2021.bib
+  - bib/Delavernhe_2020.bib
+  - bib/Deplano_2019.bib
+  - bib/Yazdani_2019.bib
+  - bib/Lersteau_2018.bib
+  - bib/Lersteau_2016.bib
 
 conferences:
     -
@@ -216,6 +153,8 @@ conferences:
             last: Cerulli
         -   first: Andrea
             last: Raiconi
+
+conferences_hidden:
     -
         type: inproceedings
         title: '{Ordonnancement robuste de r{\''e}seaux de capteurs sans fil pour
@@ -278,8 +217,6 @@ conferences:
             last: Rossi
         -   first: Marc
             last: Sevaux
-
-conferences_hidden:
     -
         type: incollection
         doi: 10.1007/978-3-319-12970-9_14
