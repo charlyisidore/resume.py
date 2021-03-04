@@ -30,6 +30,7 @@ import odf.opendocument
 import odf.style
 import odf.text
 import odf.svg
+import os
 import pybtex.plugin
 import pybtex.database
 import tempfile
@@ -146,12 +147,16 @@ def asdatetime(value, format):
 
 
 def asbib(value, exclude_fields=[]):
-    for field_name in exclude_fields:
-        if field_name in value:
-            del value[field_name]
-    obj = {"entries": {"_": value}}
-    yml = yaml.dump(obj, Dumper=yaml.SafeDumper)
-    bib = pybtex.database.parse_string(yml, "yaml")
+    if isinstance(value, str):
+        path = os.path.join(os.path.dirname(input_file), value)
+        bib = pybtex.database.parse_file(path, "bibtex")
+    else:
+        for field_name in exclude_fields:
+            if field_name in value:
+                del value[field_name]
+        obj = {"entries": {"_": value}}
+        yml = yaml.dump(obj, Dumper=yaml.SafeDumper)
+        bib = pybtex.database.parse_string(yml, "yaml")
     fmt = pybtex_apa.format_bibliography(bib)
     return "".join(entry.text.render(pybtex_render) for entry in fmt)
 
