@@ -70,13 +70,14 @@ education:
 work:
   - period:
       from: 2019-12-01
+      to: 2021-12-01
     position: 研究员
     employer:
       name: 华中科技大学
       country: 中国
       website: http://www.hust.edu.cn/
     activities:
-      - Crane scheduling and stacking problems
+      - 起重机调度和堆垛问题
   - period:
       from: 2017-01-01
       to: 2019-06-30
@@ -243,6 +244,8 @@ skills:
       - 优化组合
       - 多目标优化
       - 线性规划
+      - 列生成
+      - 分支定价
       - 元启发式算法
       - 运算复杂性理论
       - 图形理论
@@ -250,8 +253,8 @@ skills:
     label: 高级
     level: 5
     keywords:
-      - C，C++，Python，Java
-      - CPLEX，SCIP
+      - C，C++，Python，Typescript
+      - CPLEX，SCIP，Gurobi
       - Pandas，SQL
       - HTML，Javascript，CSS
   - name: 写作

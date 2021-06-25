@@ -70,6 +70,7 @@ education:
 work:
   - period:
       from: 2019-12-01
+      to: 2021-12-01
     position: Postdoctorat
     employer:
       name: Huazhong University of Science and Technology
@@ -243,6 +244,8 @@ skills:
       - Optimisation combinatoire
       - Optimisation multi-objectif
       - Programmation linéaire
+      - Génération de colonnes
+      - Branch-and-Price
       - Métaheuristiques
       - Complexité
       - Théorie des graphes
@@ -250,8 +253,8 @@ skills:
     label: Avancé
     level: 5
     keywords:
-      - C, C++, Python, Java
-      - CPLEX, SCIP
+      - C, C++, Python, Typescript
+      - CPLEX, SCIP, Gurobi
       - Pandas, SQL
       - HTML, Javascript, CSS
   - name: Rédaction

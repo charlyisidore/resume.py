@@ -11,7 +11,7 @@ contact:
     region: 
   telephone: "+33642424242"
   email: me@email.com
-  website: https://charly-lersteau.fr
+  website: https://charly-lersteau.com
   profiles:
     - network: linkedin
       username: charly-lersteau
@@ -63,6 +63,7 @@ education:
 work:
   - period:
       from: 2019-12-01
+      to: 2021-12-01
     position: Research Fellow
     employer:
       name: Huazhong University of Science and Technology
@@ -236,6 +237,8 @@ skills:
       - Combinatorial optimization
       - Multi-objective optimization
       - Linear programming
+      - Column Generation
+      - Branch-and-Price
       - Metaheuristics
       - Complexity theory
       - Graph theory
@@ -243,8 +246,8 @@ skills:
     label: Advanced
     level: 5
     keywords:
-      - C, C++, Python, Java
-      - CPLEX, SCIP
+      - C, C++, Python, Typescript
+      - CPLEX, SCIP, Gurobi
       - Pandas, SQL
       - HTML, Javascript, CSS
   - name: Writing
