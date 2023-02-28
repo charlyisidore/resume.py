@@ -1,5 +1,5 @@
 name: Charly Lersteau
-headline: Postdoctorat en Recherche Opérationnelle
+headline: Développeur et Postdoctorat en Recherche Opérationnelle
 
 translations:
   education: Parcours scolaire
@@ -69,15 +69,27 @@ education:
 
 work:
   - period:
+      from: 2022-03-01
+      to: 2023-02-28
+    position: Chef de Projet et Développeur (1 an)
+    employer:
+      name: ADEI 17
+      country: France
+      website: http://www.adei17.com/
+    activities:
+      - Développement d'un Gestionnaire de Documentation Électronique en PHP / Symfony
+      - Containerisation dans une image Docker
+  - period:
       from: 2019-12-01
       to: 2021-12-01
-    position: Postdoctorat
+    position: Postdoctorat (2 ans)
     employer:
       name: Huazhong University of Science and Technology
       country: Chine
       website: http://english.hust.edu.cn/
     activities:
-      - Problèmes d'ordonnancement de grues et d'empilement
+      - Problèmes d'ordonnancement de grues et d'empilement de conteneurs
+      - Dirigé par Weiming Shen
   - period:
       from: 2017-01-01
       to: 2019-06-30
@@ -112,8 +124,6 @@ work:
     activities:
       - Sur la résolution du problème multi-objectif de placement de facilités, mono-source avec capacités
       - Dirigé par Fabien Tricoire, Xavier Gandibleux, Anthony Przybylski
-
-work_hidden:
   - period:
       from: 2012-02-01
       to: 2012-06-30
@@ -127,14 +137,17 @@ work_hidden:
       - Dirigé par Xavier Gandibleux, Anthony Przybylski
 
 publications:
+  - bib/Lersteau_2022.bib
   - bib/Lersteau_2021.bib
-  - bib/Delavernhe_2020.bib
-  - bib/Deplano_2019.bib
-  - bib/Yazdani_2019.bib
   - bib/Lersteau_2018.bib
   - bib/Lersteau_2016.bib
 
-conferences:
+publications_hidden:
+  - bib/Delavernhe_2020.bib
+  - bib/Deplano_2019.bib
+  - bib/Yazdani_2019.bib
+
+conferences_hidden:
     -
         type: inproceedings
         title: '{Maximization of residual capacities for target tracking in wireless sensor networks}'
@@ -154,8 +167,6 @@ conferences:
             last: Cerulli
         -   first: Andrea
             last: Raiconi
-
-conferences_hidden:
     -
         type: inproceedings
         title: '{Ordonnancement robuste de r{\''e}seaux de capteurs sans fil pour
@@ -253,7 +264,7 @@ skills:
     label: Avancé
     level: 5
     keywords:
-      - C, C++, Python, Typescript
+      - C, C++, Python, PHP, Typescript
       - CPLEX, SCIP, Gurobi
       - Pandas, SQL
       - HTML, Javascript, CSS
@@ -293,6 +304,9 @@ interests:
   - Science-fiction, Steampunk
 
 references:
+  - name: Weiming Shen
+    email: wshen@ieee.org
+    website: https://ieeexplore.ieee.org/author/37277735500
   - name: Trung Thanh Nguyen
     email: T.T.Nguyen@ljmu.ac.uk
     website: https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-engineering-and-technology/department-of-maritime-and-mechanical-engineering/trung-thanh-nguyen
