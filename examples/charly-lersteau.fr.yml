@@ -77,7 +77,7 @@ work:
       country: France
       website: http://www.adei17.com/
     activities:
-      - Développement d'un Gestionnaire de Documentation Électronique en PHP / Symfony
+      - Développement d'un Système de Gestion Électronique des Documents en PHP / Symfony
       - Containerisation dans une image Docker
   - period:
       from: 2019-12-01
