@@ -1,5 +1,5 @@
 name: Charly Lersteau
-headline: Developer and Research Fellow in Operations Research
+headline: Developer and Researcher in Operations Research
 
 contact:
   location:
@@ -257,10 +257,12 @@ skills:
     label: Advanced
     level: 5
     keywords:
-      - C, C++, Python, PHP, Typescript
+      - C, C++, Rust
+      - PHP
+      - TypeScript, Javascript
+      - Python
+      - SQL
       - CPLEX, SCIP, Gurobi
-      - Pandas, SQL
-      - HTML, Javascript, CSS
   - name: Writing
     label: Advanced
     level: 5
