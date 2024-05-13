@@ -81,18 +81,18 @@ work:
   - period:
       from: 2019-12-01
       to: 2021-12-01
-    position: Research Fellow (2 years)
+    position: Research Fellow and C++ Developer (2 years)
     employer:
       name: Huazhong University of Science and Technology
       country: China
       website: http://english.hust.edu.cn/
     activities:
-      - Crane scheduling and stacking problems
+      - Algorithms for crane scheduling and stacking problems
       - Directed by Weiming Shen
   - period:
       from: 2017-01-01
       to: 2019-06-30
-    position: Research Fellow (2 years ½)
+    position: Research Fellow and C++/Python Developer (2 years ½)
     employer:
       name: Liverpool John Moores University
       country: United Kingdom
@@ -101,6 +101,19 @@ work:
       - Optimization of container-handling performance in ports
       - Anticipating and mitigating reactionary delays in railway networks
       - Directed by Trung Thanh Nguyen
+  - period:
+      from: 2013-02-01
+      to: 2013-06-30
+    position: Master thesis (5 months)
+    employer:
+      name: University of Vienna
+      country: Austria
+      website: https://www.univie.ac.at/en/
+    activities:
+      - On solving the multi-objective facility location problem with single sourcing and capacity constraints
+      - Directed by Fabien Tricoire, Xavier Gandibleux, Anthony Przybylski
+
+work_hidden:
   - period:
       from: 2014-10-01
       to: 2014-12-30
@@ -113,17 +126,6 @@ work:
       - Solving target tracking problems with wireless sensor networks using column generation
       - Directed by Raffaele Cerulli, Andrea Raiconi
   - period:
-      from: 2013-02-01
-      to: 2013-06-30
-    position: Research visit (5 months)
-    employer:
-      name: University of Vienna
-      country: Austria
-      website: https://www.univie.ac.at/en/
-    activities:
-      - On solving the multi-objective facility location problem with single sourcing and capacity constraints
-      - Directed by Fabien Tricoire, Xavier Gandibleux, Anthony Przybylski
-  - period:
       from: 2012-02-01
       to: 2012-06-30
     position: Research work (5 months)
@@ -135,13 +137,43 @@ work:
       - Parallelizing GRASP metaheuristic for the set covering problem
       - Directed by Xavier Gandibleux, Anthony Przybylski
 
-publications:
+projects:
+  - title: Vitrine (Rust)
+    subtitle: Static site generator
+    languages: Rust
+    url: https://github.com/charlyisidore/vitrine
+    details:
+      - Create websites from Markdown, SCSS, TypeScript files
+  - title: PSLP solver (C++)
+    subtitle: "Optimize storage of containers in ports"
+    languages: "C++"
+    url: https://github.com/charlyisidore/pslp-st-conflicts
+    details:
+      - '"Branch-and-Price" algorithm using SCIP'
+      - Mixed integer programming model using CPLEX
+  - title: NideMall (JavaScript)
+    subtitle: E-commerce platform
+    languages: ["JavaScript", "Node", "Vue"]
+    url: https://github.com/charlyisidore/nidemall
+    details:
+      - Customizable online store
+      - Backend in Node.js
+      - Admin frontend in Vue.js
+      - Mobile app and WeChat mini program
+      - Port of litemall (initially in Java)
+  - title: "Vocab' (TypeScript)"
+    subtitle: Lingo game
+    languages: ["TypeScript", "SolidJS"]
+    url: https://github.com/charlyisidore/vocab
+    details:
+      - Web app organized in components (like React)
+
+publications_hidden:
   - bib/Lersteau_2022.bib
   - bib/Lersteau_2021.bib
   - bib/Lersteau_2018.bib
   - bib/Lersteau_2016.bib
 
-publications_hidden:
   - bib/Delavernhe_2020.bib
   - bib/Deplano_2019.bib
   - bib/Yazdani_2019.bib
@@ -246,6 +278,14 @@ conferences_hidden:
             last: Rossi
 
 skills:
+  - name: Programming
+    label: Advanced
+    level: 5
+    keywords:
+      - C, C++, Rust, Python, PHP
+      - HTML, TypeScript, JavaScript, CSS
+      - Pandas, SQL
+      - CPLEX, SCIP, Gurobi
   - name: Optimization
     label: Advanced
     level: 5
@@ -259,16 +299,6 @@ skills:
       - Metaheuristics
       - Complexity theory
       - Graph theory
-  - name: Programming
-    label: Advanced
-    level: 5
-    keywords:
-      - C, C++, Rust
-      - PHP
-      - TypeScript, Javascript
-      - Python
-      - SQL
-      - CPLEX, SCIP, Gurobi
   - name: Writing
     label: Advanced
     level: 5
