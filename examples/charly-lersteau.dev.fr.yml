@@ -1,9 +1,19 @@
 name: Charly Lersteau
-headline: Developer and Researcher in Operations Research
+headline: Développeur et Postdoctorat en Recherche Opérationnelle
+
+translations:
+  education: Parcours scolaire
+  work: Expérience
+  publications: Publications
+  conferences: Conférences
+  contact: Contact
+  skills: Compétences
+  languages: Langues
+  interests: "Centres d'intérêt"
 
 contact:
   location:
-    address: My street
+    address: My Street
     postalCode: 42
     city: My city
     countryCode: FR
@@ -11,14 +21,8 @@ contact:
     region: 
   telephone: "+33642424242"
   email: me@email.com
-  website: https://charly-lersteau.com
+  website: https://charly-lersteau.fr
   profiles:
-    - network: github
-      username: charlyisidore
-      url: https://github.com/charlyisidore
-    - network: gitlab
-      username: charlyisidore
-      url: https://gitlab.com/charlyisidore
     - network: linkedin
       username: charly-lersteau
       url: https://www.linkedin.com/in/charly-lersteau
@@ -33,19 +37,19 @@ education:
   - period:
       from: 2013-09-01
       to: 2016-06-30
-    title: PhD Mathematics, Sciences, Information and Communication Technologies
+    title: Thèse de doctorat Math-STIC
     organisation:
-      name: University of Southern Brittany
+      name: Université Bretagne Sud
       country: France
     activities:
-      - Optimization of wireless sensor networks for tracking mobile targets
-      - Directed by Marc Sevaux, André Rossi
+      - Optimisation de réseaux de capteurs sans fil pour le suivi de cibles mobiles
+      - Dirigé par Marc Sevaux, André Rossi
   - period:
       from: 2011-09-01
       to: 2013-06-30
-    title: MSc Computer Science - Optimisation in Operations Research
+    title: Master Informatique - Optimisation en Recherche Opérationnelle
     organisation:
-      name: University of Nantes
+      name: Université de Nantes
       country: France
     moreOrganisations:
       - name: Université Libre de Bruxelles
@@ -53,87 +57,84 @@ education:
       - name: University of Vienna
         country: Austria
     activities:
-      - Erasmus and Master thesis at University of Vienna, Austria (5 months)
-      - Erasmus study at Université Libre de Bruxelles, Belgium (5 months)
-      - Ranked 2nd in the class
+      - Erasmus et Mémoire à l'Université de Vienne, Autriche (5 mois)
+      - Erasmus à l'Université Libre de Bruxelles, Belgique (5 mois)
   - period:
       from: 2010-09-01
       to: 2011-06-30
-    title: BSc Computer Science - Mathematics
+    title: Licence Informatique - Mathématiques
     organisation:
-      name: University of Nantes
+      name: Université de Nantes
       country: France
-    activities:
-      - Ranked 2nd in the class
 
 work:
   - period:
       from: 2022-03-01
       to: 2023-02-28
-    position: Project Manager and Developer (1 year)
+    position: Chef de Projet et Développeur (1 an)
     employer:
       name: ADEI 17
       country: France
       website: http://www.adei17.com/
     activities:
-      - Developed a full Electronic Document Management System in PHP / Symfony
-      - Containerized the software in a Docker image
+      - Développement d'un Système de Gestion Électronique des Documents en PHP / Symfony
+      - Containerisation dans une image Docker
   - period:
       from: 2019-12-01
       to: 2021-12-01
-    position: Research Fellow (2 years)
+    position: Postdoctorat (2 ans)
     employer:
       name: Huazhong University of Science and Technology
-      country: China
+      country: Chine
       website: http://english.hust.edu.cn/
     activities:
-      - Crane scheduling and stacking problems
-      - Directed by Weiming Shen
+      - Problèmes d'ordonnancement de grues et d'empilement de conteneurs
+      - Dirigé par Weiming Shen
   - period:
       from: 2017-01-01
       to: 2019-06-30
-    position: Research Fellow (2 years ½)
+    position: Postdoctorat (2 ans ½)
     employer:
       name: Liverpool John Moores University
-      country: United Kingdom
+      country: Royaume Uni
       website: https://ljmu.ac.uk/
     activities:
-      - Optimization of container-handling performance in ports
-      - Anticipating and mitigating reactionary delays in railway networks
-      - Directed by Trung Thanh Nguyen
+      - Optimisation de la gestion de conteneurs dans les ports
+      - Anticiper et réduire les retards en cascade dans les réseaux de chemins de fer
+      - Dirigé par Trung Thanh Nguyen
   - period:
       from: 2014-10-01
       to: 2014-12-30
-    position: Internship (3 months)
+    position: Stage recherche (3 mois)
     employer:
-      name: University of Salerno
-      country: Italy
+      name: Université de Salerne
+      country: Italie
       website: https://web.unisa.it/en/home
     activities:
-      - Solving target tracking problems with wireless sensor networks using column generation
-      - Directed by Raffaele Cerulli, Andrea Raiconi
+      - Résoudre des problèmes de suivi de cibles mobiles dans les réseaux de capteurs sans fil à l'aide de la génération de colonnes
+      - Dirigé par Raffaele Cerulli, Andrea Raiconi
   - period:
       from: 2013-02-01
       to: 2013-06-30
-    position: Research visit (5 months)
+    position: Mémoire (5 mois)
     employer:
-      name: University of Vienna
-      country: Austria
+      name: Université de Vienne
+      country: Autriche
       website: https://www.univie.ac.at/en/
     activities:
-      - On solving the multi-objective facility location problem with single sourcing and capacity constraints
-      - Directed by Fabien Tricoire, Xavier Gandibleux, Anthony Przybylski
+      - Sur la résolution du problème multi-objectif de placement de facilités, mono-source avec capacités
+      - Dirigé par Fabien Tricoire, Xavier Gandibleux, Anthony Przybylski
   - period:
       from: 2012-02-01
       to: 2012-06-30
-    position: Research work (5 months)
+    position: Projet de recherche (5 mois)
     employer:
-      name: University of Nantes
+      name: Université de Nantes
       country: France 
       website: https://english.univ-nantes.fr/
     activities:
-      - Parallelizing GRASP metaheuristic for the set covering problem
-      - Directed by Xavier Gandibleux, Anthony Przybylski
+      - Paralléliser la métaheuristique GRASP pour le problème de couverture d'ensembles
+      - Dirigé par Xavier Gandibleux, Anthony Przybylski
 
 publications:
   - bib/Lersteau_2022.bib
@@ -246,61 +247,59 @@ conferences_hidden:
             last: Rossi
 
 skills:
-  - name: Optimization
-    label: Advanced
+  - name: Optimisation
+    label: Avancé
     level: 5
     keywords:
-      - Mathematical modeling
-      - Combinatorial optimization
-      - Multi-objective optimization
-      - Linear programming
-      - Column Generation
+      - Modélisation
+      - Optimisation combinatoire
+      - Optimisation multi-objectif
+      - Programmation linéaire
+      - Génération de colonnes
       - Branch-and-Price
-      - Metaheuristics
-      - Complexity theory
-      - Graph theory
-  - name: Programming
-    label: Advanced
+      - Métaheuristiques
+      - Complexité
+      - Théorie des graphes
+  - name: Programmation
+    label: Avancé
     level: 5
     keywords:
-      - C, C++, Rust
-      - PHP
-      - TypeScript, Javascript
-      - Python
-      - SQL
+      - C, C++, Python, PHP, Typescript
       - CPLEX, SCIP, Gurobi
-  - name: Writing
-    label: Advanced
+      - Pandas, SQL
+      - HTML, Javascript, CSS
+  - name: Rédaction
+    label: Avancé
     level: 5
     keywords:
       - LaTeX, Beamer
-      - Literature review
-      - Technical writing
+      - Etat de l'art scientifique
+      - Articles scientifiques et rapports
   - name: Data science
-    label: Elementary
+    label: Basique
     level: 2
     keywords:
-      - Data parsing and analysis
-      - Link different data sources
+      - Lecture et analyse de données
+      - Lier differentes sources de données
 
 languages:
-  - name: French
-    label: Native speaker
+  - name: Français
+    label: Langue maternelle
     level: 5
-  - name: English
-    label: Fluent
+  - name: Anglais
+    label: Courant
     level: 4
-  - name: Italian
-    label: Elementary
+  - name: Italien
+    label: Basique
     level: 2
   - name: Mandarin
     label: HSK1
     level: 1
 
 interests:
-  - Traveling
-  - Philosophy
-  - Salsa dance
+  - Voyage
+  - Philosophie
+  - Danse Salsa
   - Kung fu (Hung gar)
   - Science-fiction, Steampunk
 
@@ -334,4 +333,4 @@ references:
     website: https://www.univ-nantes.fr/site-de-l-universite-de-nantes/anthony-przybylski--114099.kjsp
 
 memberships:
-  - Committee member of [Evostar 2018](http://www.evostar.org/2018/cfp_evostoc.php) (Parma)
+  - Membre du comité [Evostar 2018](http://www.evostar.org/2018/cfp_evostoc.php) (Parma)

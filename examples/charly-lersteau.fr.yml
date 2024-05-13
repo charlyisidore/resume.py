@@ -4,6 +4,7 @@ headline: Développeur et Postdoctorat en Recherche Opérationnelle
 translations:
   education: Parcours scolaire
   work: Expérience
+  projects: Projets
   publications: Publications
   conferences: Conférences
   contact: Contact
@@ -23,6 +24,12 @@ contact:
   email: me@email.com
   website: https://charly-lersteau.fr
   profiles:
+    - network: github
+      username: charlyisidore
+      url: https://github.com/charlyisidore
+    - network: gitlab
+      username: charlyisidore
+      url: https://gitlab.com/charlyisidore
     - network: linkedin
       username: charly-lersteau
       url: https://www.linkedin.com/in/charly-lersteau
@@ -71,7 +78,7 @@ work:
   - period:
       from: 2022-03-01
       to: 2023-02-28
-    position: Chef de Projet et Développeur (1 an)
+    position: Chef de Projet et Développeur PHP (1 an)
     employer:
       name: ADEI 17
       country: France
@@ -82,18 +89,18 @@ work:
   - period:
       from: 2019-12-01
       to: 2021-12-01
-    position: Postdoctorat (2 ans)
+    position: Postdoctorat et Développeur C++ (2 ans)
     employer:
       name: Huazhong University of Science and Technology
       country: Chine
       website: http://english.hust.edu.cn/
     activities:
-      - Problèmes d'ordonnancement de grues et d'empilement de conteneurs
+      - Algorithmes d'ordonnancement de grues et d'empilement de conteneurs
       - Dirigé par Weiming Shen
   - period:
       from: 2017-01-01
       to: 2019-06-30
-    position: Postdoctorat (2 ans ½)
+    position: Postdoctorat et Développeur C++/Python (2 ans ½)
     employer:
       name: Liverpool John Moores University
       country: Royaume Uni
@@ -102,6 +109,20 @@ work:
       - Optimisation de la gestion de conteneurs dans les ports
       - Anticiper et réduire les retards en cascade dans les réseaux de chemins de fer
       - Dirigé par Trung Thanh Nguyen
+  - period:
+      from: 2013-02-01
+      to: 2013-06-30
+    position: Mémoire (5 mois)
+    employer:
+      name: Université de Vienne
+      country: Autriche
+      website: https://www.univie.ac.at/en/
+    activities:
+      - Sur la résolution du problème multi-objectif de placement de facilités, mono-source avec capacités
+      - Implémentations des algorithmes en C++
+      - Dirigé par Fabien Tricoire, Xavier Gandibleux, Anthony Przybylski
+
+work_hidden:
   - period:
       from: 2014-10-01
       to: 2014-12-30
@@ -114,17 +135,6 @@ work:
       - Résoudre des problèmes de suivi de cibles mobiles dans les réseaux de capteurs sans fil à l'aide de la génération de colonnes
       - Dirigé par Raffaele Cerulli, Andrea Raiconi
   - period:
-      from: 2013-02-01
-      to: 2013-06-30
-    position: Mémoire (5 mois)
-    employer:
-      name: Université de Vienne
-      country: Autriche
-      website: https://www.univie.ac.at/en/
-    activities:
-      - Sur la résolution du problème multi-objectif de placement de facilités, mono-source avec capacités
-      - Dirigé par Fabien Tricoire, Xavier Gandibleux, Anthony Przybylski
-  - period:
       from: 2012-02-01
       to: 2012-06-30
     position: Projet de recherche (5 mois)
@@ -136,13 +146,43 @@ work:
       - Paralléliser la métaheuristique GRASP pour le problème de couverture d'ensembles
       - Dirigé par Xavier Gandibleux, Anthony Przybylski
 
-publications:
+projects:
+  - title: Vitrine (Rust)
+    subtitle: Générateur de sites statiques
+    languages: Rust
+    url: https://github.com/charlyisidore/vitrine
+    details:
+      - Génère un site web à partir de fichiers Markdown, SCSS, TypeScript
+  - title: Solveur PSLP (C++)
+    subtitle: "Optimise le stockage des conteneurs dans les ports"
+    languages: "C++"
+    url: https://github.com/charlyisidore/pslp-st-conflicts
+    details:
+      - 'Algorithme de "Branch-and-Price" utilisant SCIP'
+      - Modèle de programmation linéaire en nombres entiers utilisant CPLEX
+  - title: NideMall (JavaScript)
+    subtitle: Plateforme de e-commerce
+    languages: ["JavaScript", "Node", "Vue"]
+    url: https://github.com/charlyisidore/nidemall
+    details:
+      - Boutique en ligne sur mesure
+      - Backend en Node.js
+      - Frontend administration en Vue.js
+      - Applications mobile et WeChat
+      - Port de litemall (initialement en Java)
+  - title: "Vocab' (TypeScript)"
+    subtitle: Jeu de MOTUS
+    languages: ["TypeScript", "SolidJS"]
+    url: https://github.com/charlyisidore/vocab
+    details:
+      - Application web structurée en composants (comme React)
+
+publications_hidden:
   - bib/Lersteau_2022.bib
   - bib/Lersteau_2021.bib
   - bib/Lersteau_2018.bib
   - bib/Lersteau_2016.bib
 
-publications_hidden:
   - bib/Delavernhe_2020.bib
   - bib/Deplano_2019.bib
   - bib/Yazdani_2019.bib
@@ -247,6 +287,14 @@ conferences_hidden:
             last: Rossi
 
 skills:
+  - name: Programmation
+    label: Avancé
+    level: 5
+    keywords:
+      - C, C++, Rust, Python, PHP
+      - HTML, TypeScript, JavaScript, CSS
+      - Pandas, SQL
+      - CPLEX, SCIP, Gurobi
   - name: Optimisation
     label: Avancé
     level: 5
@@ -260,14 +308,6 @@ skills:
       - Métaheuristiques
       - Complexité
       - Théorie des graphes
-  - name: Programmation
-    label: Avancé
-    level: 5
-    keywords:
-      - C, C++, Python, PHP, Typescript
-      - CPLEX, SCIP, Gurobi
-      - Pandas, SQL
-      - HTML, Javascript, CSS
   - name: Rédaction
     label: Avancé
     level: 5
@@ -280,7 +320,7 @@ skills:
     level: 2
     keywords:
       - Lecture et analyse de données
-      - Lier differentes sources de données
+      - Lier différentes sources de données
 
 languages:
   - name: Français

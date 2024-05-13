@@ -446,6 +446,57 @@ text:
 {% endfor %}
 {% endif %}
 
+{% if projects %}
+  - class: text.Section
+    attrs:
+      name: Projects
+      stylename: cv_section
+    children:
+      - class: text.H
+        attrs:
+          outlinelevel: 1
+          stylename: cv_sectiontitle
+          text: {{ translations.projects | tojson if translations and translations.projects else 'Projects' }}
+{% for item in projects %}
+      - class: text.H
+        attrs:
+          outlinelevel: 3
+          stylename: cv_heading
+          text: {{ item.title | tojson }}
+      - class: text.P
+        attrs:
+          stylename: cv_paragraph
+        children:
+          - class: text.Span
+            attrs:
+              stylename: cv_organisation
+              text: {{ item.subtitle | tojson }}
+{% if item.languages %}
+          - class: text.S
+            attrs:
+              c: 4
+          - class: text.Span
+            attrs:
+              stylename: cv_daterange
+              text: {{ item.languages | aslist | join(" - ") }}
+{% endif %}
+{% if item.details %}
+      - class: text.List
+        attrs:
+          stylename: cv_list
+        children:
+{% for detail in item.details | aslist %}
+          - class: text.ListItem
+            children:
+              - class: text.P
+                attrs:
+                  stylename: cv_paragraph
+                  text: {{ detail | tojson }}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
 {% if education %}
   - class: text.Section
     attrs:
